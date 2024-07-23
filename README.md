@@ -7,5 +7,5 @@
 ### Skills
 ### Education
 ### Contact
-### Download CV: #### Option to download my CV
+### Download CV: Option to download my CV
 ## heading
