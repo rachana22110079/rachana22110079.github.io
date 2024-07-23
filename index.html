@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!-- Favicon link -->
+    <link rel="shortcut icon" href="portfolio.png">
+    <!-- Title link -->
+    <title>Personal Portfolio</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/b9276cef4c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-- -------------------------------------Header------------------------------------------------------ -->
+<div id="header">
+    <div class="container">
+        <nav class="head">
+            <!-- User icon -->
+            <i class="fa-solid fa-user"></i>
+            <!-- Navigation Menu -->
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Project">Project</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <!-- Close menu button -->
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <!-- Open menu button -->
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <!-- Header text -->
+        <div class="header-text">
+                <p>Hey there!</p>
+                <h1>I'm <span>Rachana Durgam</span> <br> Chemical Engineer</h1>
+                <br>
+                <!-- CV download button -->
+                <a href="Resume (3).pdf" download="Resume.pdf" class="download-button">Download CV</a>
+        </div>
+    </div>
+</div> 
+
+<!-- ------------------------------------About------------------------------------------------------- -->
+<div id="About">
+    <div class="container">
+        <div class="row">
+            <!-- About Section Image -->
+            <div class="about-col-1">
+                <img src="my_photo.jpg" alt="My photo">
+            </div>
+            <!-- About Section Content -->
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p class="text">Hello! I’m Durgam Rachana, currently in my third year of Chemical Engineering at IIT Gandhinagar. My passion lies in research, coding, and solving complex problems. I’m always on the lookout for new technologies to develop innovative solutions. Outside of my academic pursuits, I enjoy practicing yoga, as it helps me maintain a balanced and motivated lifestyle.</p>
+                <!-- Tab Titles -->
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('achievements')">Achievements</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <!-- Skills tab content -->
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Python</span></li>
+                        <!-- <li><span>Verliog</span></li> -->
+                        <li><span>Web development (HTML, CSS, JavaScript)</span></li>
+                    </ul>
+                </div>
+                <!-- Experience tab content -->
+                <!-- <div class="tab-contents" id="achievements">
+                    <ul>
+                        <li><span>Best Project Award</span><br>Received for the exceptional implementation of the "Two Cars" game on the Basys3 board</li>
+                        <li><span>1st place</span><br>Achieved in the Volleyball Association of Gandhinagar District Championship 2023-24</li>
+                    </ul>
+                </div> -->
+                <!-- Education tab content -->
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022-Present</span><br>IIT Gandhinagar</li>
+                        <li><span>2020-2022</span><br>COE Gowlidoddi</li>
+                        <li><span>2015-2020</span><br>ZPSS Sirpur town</li>
+                    </ul>
+                </div>
+        </div>
+        </div>
+    </div>
+</div>
+
+<!-- --------------------------------------Project---------------------------------------------- -->
+<div id="Project">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="projects-list">
+            <!-- Project 1 -->
+            <div>
+                <i class="fa-solid fa-puzzle-piece"></i>
+                <h2>Battery Cooling System</h2>
+                <p>Evaluated air, liquid, and combined cooling systems for batteries. Designed experimental setups with iron rods, copper tubes, fans, and water pumps. Demonstrated that combined cooling is most efficient, while liquid cooling is the most cost-effective. Validated findings through data analysis and experiments.</p>
+                <a href="https://drive.google.com/file/d/12UisnEcVBAa_7A4yEuAVg8PW3o73ZCvJ/view?usp=drive_link" target="_blank">Learn more</a>    
+            </div>
+            <!-- Project 2 -->
+            <div>
+                <i class="fa-regular fa-address-card"></i>
+                <h2>Personal Portfolio</h2>
+                <p>Developed a dynamic portfolio website utilizing HTML, CSS, and JavaScript. The site boasts a contemporary design to highlight my projects, skills, and accomplishments. It incorporates interactive features to enhance user experience and demonstrates my web development expertise.</p>
+                <a href="https://github.com/rachana22110079/rachana22110079.github.io-" target="_blank">Learn more</a>
+            </div>
+            <!-- Project 3 -->
+            <div>
+                <i class="fa-solid fa-gamepad"></i>
+                <h2> Mathematical Modeling Of Glucose
+                    Control In Diabetic Patients</h2>
+                <p>Implemented a numerical solution for the Bergman minimal model to optimize glucose control in diabetic patients. Used the fourth-order Runge-Kutta method to solve ODEs for glucose and insulin dynamics. Integrated continuous glucose monitoring and insulin pump data to prevent hypoglycemic episodes, demonstrating effective blood glucose maintenance in a closed-loop system.</p>
+                <a href="https://drive.google.com/file/d/1kYc0TCJGuGJg7n7wrnvd6jgbLqCfoHvM/view?usp=drive_link" target="_blank">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -----------------------------------------Contact-------------------------------------------------------- -->
+<div id="Contact">
+    <div class="container">
+            <div class="contact-list">
+                <h1 class="sub-title">Contact me</h1>
+                <p>You can reach out to me through the following platforms:</p>
+                <!-- Contact email -->
+                <p><i class="fas fa-paper-plane"></i>rachana.durgam@iitgn.ac.in</p>
+                <!-- Contact phone number
+                <p><i class="fas fa-phone-square alt"></i>+91 1237456985</p> -->
+                <!-- Social media icons -->
+                <div class="social-icons">
+                    <!-- <a href="https://facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter-square"></i></a> -->
+                    <a href="https://instagram.com/hasinirachana4114" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/durgam-rachana-74ba6031a" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+    </div>
+</div>
+
+<!-- ---------------------------------------Java Script--------------------------------------------------- -->
+<!-- JavaScript for tab functionality -->
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<!-- JavaScript for menu functionality -->
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";    
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";    
+    }
+</script>
+</body>
+</html>
